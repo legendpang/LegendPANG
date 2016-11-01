@@ -8,15 +8,29 @@
 
 #import "ViewController.h"
 #import "TimerLabel.h"
+#import "PBRefreshAnimation.h"
 @interface ViewController ()
 @property (nonatomic,strong)TimerLabel * timerLabel;
+@property (nonatomic,strong)PBRefreshAnimation * refreshAnimation;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self showTimerLabel];
+    //[self showTimerLabel];
+    [self testPBRefshAnimation];
+}
+#pragma mark - Test PBRefreshAnimation
+-(void)testPBRefshAnimation{
+    NSMutableArray * imageArray = [[NSMutableArray alloc] init];
+    for (int i = 1; i<19; i++) {
+        [imageArray addObject:[UIImage imageNamed:[NSString stringWithFormat:@"DOVE%d.png",i]]];
+    }
+    
+    [PBRefreshAnimation showImageAnimation:imageArray toView:self.view];
+    
+
 }
 #pragma mark - Test TimerLabel
 -(void)showTimerLabel{

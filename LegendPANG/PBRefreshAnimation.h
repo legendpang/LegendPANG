@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface PBRefreshAnimation : UIView
-// 初始  参数imageArray为出入动画图片的数组
-- (instancetype)initWithFrame:(CGRect)frame WithImageArray:(NSMutableArray *)imageArray;
+
++ (PBRefreshAnimation *)showImageAnimation:(NSMutableArray *)imageArray toView:(UIView *)view ;
+//隐藏动画
+-(void)hideAnimating;
 @end
