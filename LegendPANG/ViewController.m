@@ -21,15 +21,27 @@
     //[self showTimerLabel];
     [self testPBRefshAnimation];
 }
+-(void)testButton{
+    UIButton * testBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    testBtn.frame = CGRectMake(self.view.frame.size.width-50, 0, 50, 50);
+    testBtn.backgroundColor = [UIColor redColor];
+    [testBtn setTitle:@"TEST" forState:UIControlStateNormal];
+    [testBtn addTarget:self action:@selector(testClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:testBtn];
+}
+-(void)testClick:(UIButton *)btn{
+    [PBRefreshAnimation hideAnimatingToView:self.view];
+}
 #pragma mark - Test PBRefreshAnimation
 -(void)testPBRefshAnimation{
+    
     NSMutableArray * imageArray = [[NSMutableArray alloc] init];
     for (int i = 1; i<19; i++) {
         [imageArray addObject:[UIImage imageNamed:[NSString stringWithFormat:@"DOVE%d.png",i]]];
     }
     
     [PBRefreshAnimation showImageAnimation:imageArray toView:self.view];
-    
+    [self testButton];
 
 }
 #pragma mark - Test TimerLabel

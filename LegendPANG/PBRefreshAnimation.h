@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface PBRefreshAnimation : UIView
-
+//显示动画
 + (PBRefreshAnimation *)showImageAnimation:(NSMutableArray *)imageArray toView:(UIView *)view ;
 //隐藏动画
--(void)hideAnimating;
++(void)hideAnimatingToView:(UIView *)view;
 @end

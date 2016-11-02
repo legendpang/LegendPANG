@@ -10,6 +10,7 @@
 
 @interface PBRefreshAnimation()
 @property (nonatomic,strong)UIImageView * imageViewAnimation;
+
 @end
 
 
@@ -66,9 +67,14 @@
 + (PBRefreshAnimation *)showImageAnimation:(NSMutableArray *)imageArray toView:(UIView *)view {
      if (view == nil) view = [[UIApplication sharedApplication].windows lastObject];
     PBRefreshAnimation * pbra = [[self alloc] initWithImageArray:imageArray WithView:view];
+    pbra.tag = 1001;
     return pbra;
 }
--(void)hideAnimating{
-    [self removeFromSuperview];
++(void)hideAnimatingToView:(UIView *)view{
+    if (view == nil) view = [[UIApplication sharedApplication].windows lastObject];
+    UIView * pbra = (PBRefreshAnimation *)[view viewWithTag:1001];
+    if (pbra!=nil) {
+        [pbra removeFromSuperview];
+    }
 }
 @end
