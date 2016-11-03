@@ -17,6 +17,10 @@
 		F3C8DEEE1DC6D219008BA275 /* LegendPANGUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8DEED1DC6D219008BA275 /* LegendPANGUITests.m */; };
 		F3C8DEFF1DC6D2EA008BA275 /* PBRefreshAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8DEFC1DC6D2EA008BA275 /* PBRefreshAnimation.m */; };
 		F3C8DF001DC6D2EA008BA275 /* TimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8DEFE1DC6D2EA008BA275 /* TimerLabel.m */; };
+		F3D05B561DCAD4750005F946 /* PBSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D05B551DCAD4750005F946 /* PBSlideView.m */; };
+		F3D05B591DCB130D0005F946 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D05B581DCB130D0005F946 /* FirstViewController.m */; };
+		F3D05B5C1DCB13760005F946 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D05B5B1DCB13760005F946 /* SecondViewController.m */; };
+		F3D05B5F1DCB1F3C0005F946 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D05B5E1DCB1F3C0005F946 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,14 @@
 		F3C8DEFC1DC6D2EA008BA275 /* PBRefreshAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBRefreshAnimation.m; sourceTree = "<group>"; };
 		F3C8DEFD1DC6D2EA008BA275 /* TimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerLabel.h; sourceTree = "<group>"; };
 		F3C8DEFE1DC6D2EA008BA275 /* TimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerLabel.m; sourceTree = "<group>"; };
+		F3D05B541DCAD4750005F946 /* PBSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBSlideView.h; sourceTree = "<group>"; };
+		F3D05B551DCAD4750005F946 /* PBSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBSlideView.m; sourceTree = "<group>"; };
+		F3D05B571DCB130D0005F946 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		F3D05B581DCB130D0005F946 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		F3D05B5A1DCB13760005F946 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		F3D05B5B1DCB13760005F946 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F3D05B5D1DCB1F3C0005F946 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		F3D05B5E1DCB1F3C0005F946 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +123,18 @@
 				F3C8DEFC1DC6D2EA008BA275 /* PBRefreshAnimation.m */,
 				F3C8DEFD1DC6D2EA008BA275 /* TimerLabel.h */,
 				F3C8DEFE1DC6D2EA008BA275 /* TimerLabel.m */,
+				F3D05B541DCAD4750005F946 /* PBSlideView.h */,
+				F3D05B551DCAD4750005F946 /* PBSlideView.m */,
 				F3C8DECB1DC6D219008BA275 /* AppDelegate.h */,
 				F3C8DECC1DC6D219008BA275 /* AppDelegate.m */,
 				F3C8DECE1DC6D219008BA275 /* ViewController.h */,
 				F3C8DECF1DC6D219008BA275 /* ViewController.m */,
+				F3D05B571DCB130D0005F946 /* FirstViewController.h */,
+				F3D05B581DCB130D0005F946 /* FirstViewController.m */,
+				F3D05B5A1DCB13760005F946 /* SecondViewController.h */,
+				F3D05B5B1DCB13760005F946 /* SecondViewController.m */,
+				F3D05B5D1DCB1F3C0005F946 /* ThirdViewController.h */,
+				F3D05B5E1DCB1F3C0005F946 /* ThirdViewController.m */,
 				F3C8DED11DC6D219008BA275 /* Main.storyboard */,
 				F3C8DED41DC6D219008BA275 /* Assets.xcassets */,
 				F3C8DED61DC6D219008BA275 /* LaunchScreen.storyboard */,
@@ -282,6 +302,10 @@
 			files = (
 				F3C8DEFF1DC6D2EA008BA275 /* PBRefreshAnimation.m in Sources */,
 				F3C8DED01DC6D219008BA275 /* ViewController.m in Sources */,
+				F3D05B591DCB130D0005F946 /* FirstViewController.m in Sources */,
+				F3D05B561DCAD4750005F946 /* PBSlideView.m in Sources */,
+				F3D05B5C1DCB13760005F946 /* SecondViewController.m in Sources */,
+				F3D05B5F1DCB1F3C0005F946 /* ThirdViewController.m in Sources */,
 				F3C8DF001DC6D2EA008BA275 /* TimerLabel.m in Sources */,
 				F3C8DECD1DC6D219008BA275 /* AppDelegate.m in Sources */,
 				F3C8DECA1DC6D219008BA275 /* main.m in Sources */,
@@ -510,6 +534,7 @@
 				F3C8DEF41DC6D219008BA275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3C8DEF51DC6D219008BA275 /* Build configuration list for PBXNativeTarget "LegendPANGTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +543,7 @@
 				F3C8DEF71DC6D219008BA275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3C8DEF81DC6D219008BA275 /* Build configuration list for PBXNativeTarget "LegendPANGUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +552,7 @@
 				F3C8DEFA1DC6D219008BA275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

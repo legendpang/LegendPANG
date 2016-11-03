@@ -9,6 +9,10 @@
 #import "ViewController.h"
 #import "TimerLabel.h"
 #import "PBRefreshAnimation.h"
+#import "PBSlideView.h"
+#import "FirstViewController.h"
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
 @interface ViewController ()
 @property (nonatomic,strong)TimerLabel * timerLabel;
 @property (nonatomic,strong)PBRefreshAnimation * refreshAnimation;
@@ -19,7 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //[self showTimerLabel];
-    [self testPBRefshAnimation];
+    //[self testPBRefshAnimation];
+    [self testPBSlideView];
 }
 -(void)testButton{
     UIButton * testBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -30,7 +35,26 @@
     [self.view addSubview:testBtn];
 }
 -(void)testClick:(UIButton *)btn{
-    [PBRefreshAnimation hideAnimatingToView:self.view];
+    
+}
+#pragma mark - Test PBSlideView
+-(void)testPBSlideView{
+    NSMutableArray * vcArr = [[NSMutableArray alloc] init];
+    FirstViewController * first = [[FirstViewController alloc] init];
+    [vcArr addObject:first];
+    SecondViewController * second = [[SecondViewController alloc] init];
+    [vcArr addObject:second];
+    ThirdViewController * third = [[ThirdViewController alloc] init];
+    [vcArr addObject:third];
+    ThirdViewController * thirds = [[ThirdViewController alloc] init];
+    [vcArr addObject:thirds];
+    ThirdViewController * thirdss = [[ThirdViewController alloc] init];
+    [vcArr addObject:thirdss];
+    
+    PBSlideView * slideView = [[PBSlideView alloc] initWithUIViewControllerArray:vcArr];
+    slideView.frame = CGRectMake(0, 0, iViewWidth, iViewHeight);
+    [self.view addSubview:slideView];
+       
 }
 #pragma mark - Test PBRefreshAnimation
 -(void)testPBRefshAnimation{

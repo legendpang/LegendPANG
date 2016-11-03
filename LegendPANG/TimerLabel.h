@@ -1,6 +1,6 @@
 //
 //  TimerLabel.h
-//  nsarrydelete
+//  
 //
 //  Created by Dalang on 16/4/24.
 //  Copyright © 2016年 Dalang. All rights reserved.
