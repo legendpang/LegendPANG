@@ -10,6 +10,7 @@
 #import "TimerLabel.h"
 #import "PBRefreshAnimation.h"
 #import "PBSlideView.h"
+#import "PBFlashLEDLabel.h"
 #import "FirstViewController.h"
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
@@ -22,9 +23,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor cyanColor];
     //[self showTimerLabel];
     //[self testPBRefshAnimation];
-    [self testPBSlideView];
+    //[self testPBSlideView];
+    [self testPBFlashLEDLabel];
 }
 -(void)testButton{
     UIButton * testBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -36,6 +39,11 @@
 }
 -(void)testClick:(UIButton *)btn{
     
+}
+#pragma mark - Test PBFlashLEDLabel
+-(void)testPBFlashLEDLabel{
+    PBFlashLEDLabel * flashLabel =[[PBFlashLEDLabel alloc] initWithFrame:CGRectMake(10, 10, 100, 30) WithText:@"123456789" WithLabelBackgroudColor:[UIColor greenColor] WithColor:[UIColor cyanColor]];
+    [self.view addSubview:flashLabel];
 }
 #pragma mark - Test PBSlideView
 -(void)testPBSlideView{
