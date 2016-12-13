@@ -27,7 +27,18 @@
     //[self showTimerLabel];
     //[self testPBRefshAnimation];
     //[self testPBSlideView];
-    [self testPBFlashLEDLabel];
+    //[self testPBFlashLEDLabel];
+    [self testSetLine];
+}
+#pragma mark- 画折线图
+-(void)testSetLine{
+    UIButton * testBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    testBtn.frame = CGRectMake(self.view.frame.size.width-100, 0, 100, 50);
+    testBtn.backgroundColor = [UIColor redColor];
+    [testBtn setTitle:@"折线图" forState:UIControlStateNormal];
+    [testBtn addTarget:self action:@selector(testSetLineClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:testBtn];
+
 }
 -(void)testButton{
     UIButton * testBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -36,6 +47,13 @@
     [testBtn setTitle:@"TEST" forState:UIControlStateNormal];
     [testBtn addTarget:self action:@selector(testClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:testBtn];
+}
+-(void)testSetLineClick:(UIButton *)btn{
+    FirstViewController * first = [[FirstViewController alloc] init];
+    [self presentViewController:first animated:YES completion:^{
+        
+    }];
+    
 }
 -(void)testClick:(UIButton *)btn{
     
