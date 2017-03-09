@@ -14,6 +14,7 @@
 #import "FirstViewController.h"
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
+#import "TouchLockViewController.h"
 @interface ViewController ()
 @property (nonatomic,strong)TimerLabel * timerLabel;
 @property (nonatomic,strong)PBRefreshAnimation * refreshAnimation;
@@ -28,7 +29,26 @@
     //[self testPBRefshAnimation];
     //[self testPBSlideView];
     //[self testPBFlashLEDLabel];
-    [self testSetLine];
+    //[self testSetLine];
+    [self testTouchLock];
+}
+#pragma mark- 手势解锁
+-(void)testTouchLock
+{
+    UIButton * testBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    testBtn.frame = CGRectMake(self.view.frame.size.width-100, 0, 100, 50);
+    testBtn.backgroundColor = [UIColor redColor];
+    [testBtn setTitle:@"手势解锁" forState:UIControlStateNormal];
+    [testBtn addTarget:self action:@selector(testTouchLockClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:testBtn];
+
+}
+-(void)testTouchLockClick:(UIButton *)btn
+{
+    TouchLockViewController * lockTocuh = [[TouchLockViewController alloc] init];
+    [self presentViewController:lockTocuh animated:YES completion:^{
+        
+    }];
 }
 #pragma mark- 画折线图
 -(void)testSetLine{

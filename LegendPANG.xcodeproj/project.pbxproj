@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F31378B81DDED85500168087 /* PBFlashLEDLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F31378B71DDED85500168087 /* PBFlashLEDLabel.m */; };
 		F382A19C1DFF9A020064241F /* PBChartLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = F382A19B1DFF9A020064241F /* PBChartLineView.m */; };
+		F3898A011E70F81100897682 /* TouchLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3898A001E70F81100897682 /* TouchLockViewController.m */; };
 		F3C8DECA1DC6D219008BA275 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8DEC91DC6D219008BA275 /* main.m */; };
 		F3C8DECD1DC6D219008BA275 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8DECC1DC6D219008BA275 /* AppDelegate.m */; };
 		F3C8DED01DC6D219008BA275 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8DECF1DC6D219008BA275 /* ViewController.m */; };
@@ -47,6 +48,8 @@
 		F31378B71DDED85500168087 /* PBFlashLEDLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFlashLEDLabel.m; sourceTree = "<group>"; };
 		F382A19A1DFF9A020064241F /* PBChartLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBChartLineView.h; sourceTree = "<group>"; };
 		F382A19B1DFF9A020064241F /* PBChartLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBChartLineView.m; sourceTree = "<group>"; };
+		F38989FF1E70F81100897682 /* TouchLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchLockViewController.h; sourceTree = "<group>"; };
+		F3898A001E70F81100897682 /* TouchLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchLockViewController.m; sourceTree = "<group>"; };
 		F3C8DEC51DC6D218008BA275 /* LegendPANG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegendPANG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C8DEC91DC6D219008BA275 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F3C8DECB1DC6D219008BA275 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -139,6 +142,8 @@
 				F3C8DECC1DC6D219008BA275 /* AppDelegate.m */,
 				F3C8DECE1DC6D219008BA275 /* ViewController.h */,
 				F3C8DECF1DC6D219008BA275 /* ViewController.m */,
+				F38989FF1E70F81100897682 /* TouchLockViewController.h */,
+				F3898A001E70F81100897682 /* TouchLockViewController.m */,
 				F3D05B571DCB130D0005F946 /* FirstViewController.h */,
 				F3D05B581DCB130D0005F946 /* FirstViewController.m */,
 				F3D05B5A1DCB13760005F946 /* SecondViewController.h */,
@@ -318,6 +323,7 @@
 				F382A19C1DFF9A020064241F /* PBChartLineView.m in Sources */,
 				F3D05B561DCAD4750005F946 /* PBSlideView.m in Sources */,
 				F3D05B5C1DCB13760005F946 /* SecondViewController.m in Sources */,
+				F3898A011E70F81100897682 /* TouchLockViewController.m in Sources */,
 				F3D05B5F1DCB1F3C0005F946 /* ThirdViewController.m in Sources */,
 				F3C8DF001DC6D2EA008BA275 /* TimerLabel.m in Sources */,
 				F3C8DECD1DC6D219008BA275 /* AppDelegate.m in Sources */,

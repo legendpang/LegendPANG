@@ -4,7 +4,7 @@
 //
 //  Created by Dalang on 2016/11/18.
 //  Copyright © 2016年 Dalang. All rights reserved.
-//
+//  简易让文字进行滚动效果
 
 #import <UIKit/UIKit.h>
 
