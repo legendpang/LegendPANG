@@ -30,7 +30,43 @@
     //[self testPBSlideView];
     //[self testPBFlashLEDLabel];
     //[self testSetLine];
-    [self testTouchLock];
+    //[self testTouchLock];
+    [self dismissTest];
+}
+#pragma mark- 逐渐消失动画
+-(void)dismissTest
+{
+    
+    UIButton * testBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    testBtn.frame = CGRectMake(self.view.frame.size.width-100, 0, 100, 50);
+    testBtn.backgroundColor = [UIColor redColor];
+    [testBtn setTitle:@"动画消失" forState:UIControlStateNormal];
+    [testBtn addTarget:self action:@selector(dismissTestClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:testBtn];
+
+}
+-(void)dismissAnimated{
+    UILabel *view = [[UILabel alloc]initWithFrame:CGRectMake(10, self.view.frame.size.height-30-10, 200, 30)];
+    view.backgroundColor = [UIColor clearColor];
+    view.tag = 123;
+    view.text = @"科比布莱恩特 进入了房间";
+    [self.view addSubview:view];
+    [UIView animateWithDuration:3.0f animations:^{
+        view.alpha = 0.0f;
+    }];
+    [UIView animateWithDuration:2.0f animations:^{
+        view.frame = CGRectMake(10, self.view.frame.size.height-30-10-100, 200, 30);
+    }];
+    [self performSelector:@selector(removeFromSuperviewSpecial) withObject:nil afterDelay:1.5];
+}
+-(void)removeFromSuperviewSpecial
+{
+    UILabel * viewLabel =  (UILabel *)[self.view viewWithTag:123];
+    [viewLabel removeFromSuperview];
+}
+-(void)dismissTestClick:(UIButton *)btn
+{
+    [self dismissAnimated];
 }
 #pragma mark- 手势解锁
 -(void)testTouchLock
